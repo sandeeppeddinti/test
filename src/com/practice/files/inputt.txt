@@ -1,0 +1,77 @@
+ Graphic characters are characters defined by Unicode to have a particular semantic, and either have a visible glyph shape or represent a visible space. As of Unicode 9.0 there are 128,019 graphic characters.
+
+Format characters are characters that do not have a visible appearance, but may have an effect on the appearance or behavior of neighboring characters. For example, U+200C Zero-width non-joiner and U+200D Zero-width joiner may be used to change the default shaping behavior of adjacent characters (e.g., to inhibit ligatures or request ligature formation). There are 153 format characters in Unicode 9.0.
+
+Sixty-five code points (U+0000–U+001F and U+007F–U+009F) are reserved as control codes, and correspond to the C0 and C1 control codes defined in ISO/IEC 6429. Of these U+0009 (Tab), U+000A (Line Feed), and U+000D (Carriage Return) are widely used in Unicode-encoded texts.
+
+Graphic characters, format characters, control code characters, and private use characters are known collectively as assigned characters.
+
+Abstract characters[edit]
+The set of graphic and format characters defined by Unicode does not correspond directly to the repertoire of abstract characters that is representable under Unicode. Unicode encodes characters by associating an abstract character with a particular code point.[14] However, not all abstract characters are encoded as a single Unicode character, and some abstract characters may be represented in Unicode by a sequence of two or more characters. For example, a Latin small letter "i" with an ogonek, a dot above, and an acute accent, which is required in Lithuanian, is represented by the character sequence U+012F, U+0307, U+0301. Unicode maintains a list of uniquely named character sequences for abstract characters that are not directly encoded in Unicode.[15]
+
+All graphic, format, and private use characters have a unique and immutable name by which they may be identified. This immutability has been guaranteed since Unicode version 2.0 by the Name Stability policy.[12] In cases where the name is seriously defective and misleading, or has a serious typographical error, a formal alias may be defined, and applications are encouraged to use the formal alias in place of the official character name. For example, U+A015 ꀕ YI SYLLABLE WU has the formal alias yi syllable iteration mark, and U+FE18 ︘ PRESENTATION FORM FOR VERTICAL RIGHT WHITE LENTICULAR BRAKCET (sic) has the formal alias presentation form for vertical right white lenticular bracket.[16]
+
+Unicode Consortium[edit]
+Main article: Unicode Consortium
+The Unicode Consortium is a nonprofit organization that coordinates Unicode's development. Full members include most of the main computer software and hardware companies with any interest in text-processing standards, including Adobe Systems, Apple, Google, IBM, Microsoft, Oracle Corporation, and Yahoo!.[17]
+
+The Consortium has the ambitious goal of eventually replacing existing character encoding schemes with Unicode and its standard Unicode Transformation Format (UTF) schemes, as many of the existing schemes are limited in size and scope and are incompatible with multilingual environments.
+
+Versions[edit]
+Unicode is developed in conjunction with the International Organization for Standardization and shares the character repertoire with ISO/IEC 10646: the Universal Character Set. Unicode and ISO/IEC 10646 function equivalently as character encodings, but The Unicode Standard contains much more information for implementers, covering—in depth—topics such as bitwise encoding, collation and rendering. The Unicode Standard enumerates a multitude of character properties, including those needed for supporting bidirectional text. The two standards do use slightly different terminology.
+
+The Consortium first published The Unicode Standard (ISBN 0-321-18578-1) in 1991 and continues to develop standards based on that original work. The latest version of the standard, Unicode 9.0, was released in June 2016 and is available from the consortium's website. The last of the major versions (versions x.0) to be published in book form was Unicode 5.0 (ISBN 0-321-48091-0), but since Unicode 6.0 the full text of the standard is no longer being published in book form. In 2012, however, it was announced that only the core specification for Unicode version 6.1 would be made available as a 692-page print-on-demand paperback.[18] Unlike the previous major version printings of the Standard, the print-on-demand core specification does not include any code charts or standard annexes, but the entire standard, including the core specification, will still remain freely available on the Unicode website.
+
+Thus far the following major and minor versions of the Unicode standard have been published. Update versions, which do not include any changes to character repertoire, are signified by the third number (e.g., "version 4.0.1") and are omitted in the table below.[19]
+
+Unicode versions
+Version	Date	Book	Corresponding ISO/IEC 10646 Edition	Scripts	Characters
+Total[tablenote 1]	Notable additions
+1.0.0	October 1991	ISBN 0-201-56788-1 (Vol.1)		24	7,161	Initial repertoire covers these scripts: Arabic, Armenian, Bengali, Bopomofo, Cyrillic, Devanagari, Georgian, Greek and Coptic, Gujarati, Gurmukhi, Hangul, Hebrew, Hiragana, Kannada, Katakana, Lao, Latin, Malayalam, Oriya, Tamil, Telugu, Thai, and Tibetan.[20]
+1.0.1	June 1992	ISBN 0-201-60845-6 (Vol.2)		25	28,359	The initial set of 20,902 CJK Unified Ideographs is defined.[21]
+1.1	June 1993		ISO/IEC 10646-1:1993	24	34,233	4,306 more Hangul syllables added to original set of 2,350 characters. Tibetan removed.[22]
+2.0	July 1996	ISBN 0-201-48345-9	ISO/IEC 10646-1:1993 plus Amendments 5, 6 and 7	25	38,950	Original set of Hangul syllables removed, and a new set of 11,172 Hangul syllables added at a new location. Tibetan added back in a new location and with a different character repertoire. Surrogate character mechanism defined, and Plane 15 and Plane 16 Private Use Areas allocated.[23]
+2.1	May 1998		ISO/IEC 10646-1:1993 plus Amendments 5, 6 and 7, as well as two characters from Amendment 18	25	38,952	Euro sign and Object Replacement Character added.[24]
+3.0	September 1999	ISBN 0-201-61633-5	ISO/IEC 10646-1:2000	38	49,259	Cherokee, Ethiopic, Khmer, Mongolian, Burmese, Ogham, Runic, Sinhala, Syriac, Thaana, Unified Canadian Aboriginal Syllabics, and Yi Syllables added, as well as a set of Braille patterns.[25]
+3.1	March 2001		ISO/IEC 10646-1:2000
+ISO/IEC 10646-2:2001
+
+41	94,205	Deseret, Gothic and Old Italic added, as well as sets of symbols for Western music and Byzantine music, and 42,711 additional CJK Unified Ideographs.[26]
+3.2	March 2002		ISO/IEC 10646-1:2000 plus Amendment 1
+ISO/IEC 10646-2:2001
+
+45	95,221	Philippine scripts Buhid, Hanunó'o, Tagalog, and Tagbanwa added.[27]
+4.0	April 2003	ISBN 0-321-18578-1	ISO/IEC 10646:2003	52	96,447	Cypriot syllabary, Limbu, Linear B, Osmanya, Shavian, Tai Le, and Ugaritic added, as well as Hexagram symbols.[28]
+4.1	March 2005		ISO/IEC 10646:2003 plus Amendment 1	59	97,720	Buginese, Glagolitic, Kharoshthi, New Tai Lue, Old Persian, Syloti Nagri, and Tifinagh added, and Coptic was disunified from Greek. Ancient Greek numbers and musical symbols were also added.[29]
+5.0	July 2006	ISBN 0-321-48091-0	ISO/IEC 10646:2003 plus Amendments 1 and 2, as well as four characters from Amendment 3	64	99,089	Balinese, Cuneiform, N'Ko, Phags-pa, and Phoenician added.[30]
+5.1	April 2008		ISO/IEC 10646:2003 plus Amendments 1, 2, 3 and 4	75	100,713	Carian, Cham, Kayah Li, Lepcha, Lycian, Lydian, Ol Chiki, Rejang, Saurashtra, Sundanese, and Vai added, as well as sets of symbols for the Phaistos Disc, Mahjong tiles, and Domino tiles. There were also important additions for Burmese, additions of letters and Scribal abbreviations used in medieval manuscripts, and the addition of Capital ẞ.[31]
+5.2	October 2009		ISO/IEC 10646:2003 plus Amendments 1, 2, 3, 4, 5 and 6	90	107,361	Avestan, Bamum, Egyptian hieroglyphs (the Gardiner Set, comprising 1,071 characters), Imperial Aramaic, Inscriptional Pahlavi, Inscriptional Parthian, Javanese, Kaithi, Lisu, Meetei Mayek, Old South Arabian, Old Turkic, Samaritan, Tai Tham and Tai Viet added. 4,149 additional CJK Unified Ideographs (CJK-C), as well as extended Jamo for Old Hangul, and characters for Vedic Sanskrit.[32]
+6.0	October 2010		ISO/IEC 10646:2010 plus the Indian rupee sign	93	109,449	Batak, Brahmi, Mandaic, playing card symbols, transport and map symbols, alchemical symbols, emoticons and emoji. 222 additional CJK Unified Ideographs (CJK-D) added.[33]
+6.1	January 2012		ISO/IEC 10646:2012	100	110,181	Chakma, Meroitic cursive, Meroitic hieroglyphs, Miao, Sharada, Sora Sompeng, and Takri.[34]
+6.2	September 2012		ISO/IEC 10646:2012 plus the Turkish lira sign	100	110,182	Turkish lira sign.[35]
+6.3	September 2013		ISO/IEC 10646:2012 plus six characters	100	110,187	5 bidirectional formatting characters.[36]
+7.0	June 2014		ISO/IEC 10646:2012 plus Amendments 1 and 2, as well as the Ruble sign	123	113,021	Bassa Vah, Caucasian Albanian, Duployan, Elbasan, Grantha, Khojki, Khudawadi, Linear A, Mahajani, Manichaean, Mende Kikakui, Modi, Mro, Nabataean, Old North Arabian, Old Permic, Pahawh Hmong, Palmyrene, Pau Cin Hau, Psalter Pahlavi, Siddham, Tirhuta, Warang Citi, and Dingbats.[37]
+8.0	June 2015		ISO/IEC 10646:2014 plus Amendment 1, as well as the Lari sign, nine CJK unified ideographs, and 41 emoji characters[38]	129	120,737	Ahom, Anatolian hieroglyphs, Hatran, Multani, Old Hungarian, SignWriting, 5,771 CJK unified ideographs, a set of lowercase letters for Cherokee, and five emoji skin tone modifiers[39]
+9.0	June 2016		ISO/IEC 10646:2014 plus Amendments 1 and 2, as well as Adlam, Newa, Japanese TV symbols, and 74 emoji and symbols[40]	135	128,237	Adlam, Bhaiksuki, Marchen, Newa, Osage, Tangut, and 72 emoji[41][42]
+Jump up ^ The number of characters listed for each version of Unicode is the total number of graphic, format and control characters (i.e., excluding private-use characters, noncharacters and surrogate code points).
+Scripts covered[edit]
+Main article: Script (Unicode)
+
+Many modern applications can render a substantial subset of the many scripts in Unicode, as demonstrated by this screenshot from the OpenOffice.org application.
+Unicode covers almost all scripts (writing systems) in current use today.[43][not in citation given]
+
+A total of 135 scripts are included in the latest version of Unicode (covering alphabets, abugidas and syllabaries), although there are still scripts that are not yet encoded, particularly those mainly used in historical, liturgical, and academic contexts. Further additions of characters to the already encoded scripts, as well as symbols, in particular for mathematics and music (in the form of notes and rhythmic symbols), also occur.
+
+The Unicode Roadmap Committee (Michael Everson, Rick McGowan, and Ken Whistler) maintain the list of scripts that are candidates or potential candidates for encoding and their tentative code block assignments on the Unicode Roadmap page of the Unicode Consortium Web site. For some scripts on the Roadmap, such as Jurchen and Nü Shu, encoding proposals have been made and they are working their way through the approval process. For others scripts, such as Mayan and Rongorongo, no proposal has yet been made, and they await agreement on character repertoire and other details from the user communities involved.
+
+Some modern invented scripts which have not yet been included in Unicode (e.g., Tengwar) or which do not qualify for inclusion in Unicode due to lack of real-world use (e.g., Klingon) are listed in the ConScript Unicode Registry, along with unofficial but widely used Private Use Area code assignments.
+
+There is also a Medieval Unicode Font Initiative focused on special Latin medieval characters. Part of these proposals have been already included into Unicode.
+
+The Script Encoding Initiative, a project run by Deborah Anderson at the University of California, Berkeley was founded in 2002 with the goal of funding proposals for scripts not yet encoded in the standard. The project has become a major source of proposed additions to the standard in recent years.[44]
+
+Mapping and encodings[edit]
+See also: Universal Character Set characters
+Several mechanisms have been specified for implementing Unicode. The choice depends on available storage space, source code compatibility, and interoperability with other systems.
+
+Unicode Transformation Format and Universal Coded Character Set
